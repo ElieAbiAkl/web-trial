@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+h1 {
+text-align: center;
+color: black;
+}
+#nav-bar{
+  padding: 8;
+  margin: 0;
+}
+#logo{
+  height: 40px;
+}
+#Banner{
+width: 100%;
+object-fit: cover;
+}
+.location{
+  color: grey;
+}
+.about{
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 8px;
+}
+.description{
+  width: 50%;
+  padding-right: 8px;
+}
+.description-paragraph{
+  margin-top: 0;
+}
+.team-img{
+  width: 50%;
+}
+.team-png{
+  border-radius: 5%;
+  width: 100%;
+}
+h2{
+  text-align: center;
+  color: black;
+}
+.jobs{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+.job-role{
+  margin-bottom: 4px;
+}
+.apply{
+  float: right;
+}
+a{
+  text-decoration: none;
+}
+.footer{
+  background-color: ghostwhite;
+  text-align: center;
+  padding-bottom: 24px;
+}
+.footer-links{
+  list-style: none;
+  padding: 8px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+
+}
+.footer-links li{
+  display: inline;
+  margin: 0 16px;
+}
