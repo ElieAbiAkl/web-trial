@@ -5,11 +5,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="nav-bar">
-      <img id="logo" alt="Jovian Logo" src="jovianlogo.png">
-
-    </div>
-    <img id="Banner" src="Banner.jpg.jpg" alt="Banner" height="240">
+    <img id="Banner" src="pink.avif" alt="Banner" height="240">
     <h1 >About Jovian</h1>
     <div class="about">
     <div class="description">
@@ -22,42 +18,108 @@
     <p>
       We also offer bootcamps
       <ol>
-        <li>Data Analyst bootcamps</li>
-        <li>Full Stack Development bootcamps</li>
+        <li class="links">Data Analyst bootcamps</li>
+        <li class="links">Full Stack Development bootcamps</li>
       </ol>
     </p>
      </div>
      <div class="team-img">
 
-      <img class="team-png" src="Team.jpg.jpg" alt="Team img" height="200">
+      <img class="team-png" src="premium_photo-1661758211006-d41106e4be4d.avif" alt="Team img" height="200">
     </div>
 
   </div>
     <h2>Job Opportunities</h2>
     <div class="jobs">
-    <div>
-      <a href="" class="apply">Apply</a>
-      <h3 class="job-role">Front-end Developer</h3>
-      <div class="location">Beirut,Lebanon</div>
+      <table class="jobs-table">
+        <tr class="jobs-header-row">
+          <th rowspan="2">Job Title</th>
+          <th colspan="2">Location</th>
+          <th rowspan="2">Salary</th>
+          <th rowspan="2">Date Posted</th>
+        </tr>
+        <tr class="jobs-header-row">
+          <th>City</th>
+          <th>Country</th>
+        </tr>
+        <tr class="jobs-data-row">
+          <td>Back-End Developer</td>
+          <td>Paris</td>
+          <td>France</td>
+          <td>10,000 $</td>
+          <td>14 Jan 2024</td>
+        </tr>
+        <tr class="jobs-data-row">
+          <td>Data Scientist</td>
+          <td>Remote</td>
+          <td>Online</td>
+          <td>4,000$</td>
+          <td>26 Jan 2024</td>
+        </tr>
+        <tr class="jobs-data-row">
+          <td>Machine Learning Engineer</td>
+          <td>Saida </td>
+          <td>Lebanon</td>
+          <td>3,500 $</td>
+          <td>4 Feb 2024</td>
+        </tr>
+        <tr class="jobs-data-row">
+          <td>Front-End Developer</td>
+          <td>Beirut </td>
+          <td>Lebanon</td>
+          <td>2,500 $</td>
+          <td>2 Jan 2024</td>
+        </tr>
+      </table>
+
+  </div>
+  <div class="application">
+    <h2>Submit Your Application</h2>
+    <form action="https://formbold.com/s/oDmQX" method="POST" id="application-form" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Name</label><br>
+        <input type="text" class="name" name="name" required placeholder="Your Full Name">
+
+      </div>
+      <div class="form-group">
+      <label for="email">Email</label><br>
+      <input type="email" class="email" name="email" required placeholder="Your  Email  Address">
     </div>
-    <div>
-      <a href="" class="apply">Apply</a>
-      <h3 class="job-role">Back-end Developer</h3>
-      <div class="location">Quebec, Canada</div>
+    <div class="form-group">
+      <label for="phone">Phone</label><br>
+      <input type="tel" class="phone" name="phone"  placeholder="Your Phone Number (+961)" required>
     </div>
-    <div>
-      <a href="" class="apply">Apply</a>
-      <h3 class="job-role">Data-Analyst</h3>
-      <div class="location">Paris,France</div>
+    <div class="form-group">
+      <label for="position">Position Applied For :</label><br>
+      <select id="posistion" name="position applied" required>
+        <option value="">Select Position</option>
+        <option value="Back-End">Back-End Developer</option>
+        <option value="Data Scientist">Data Scientist	</option>
+        <option value="ML Engineer">Machine Learning Engineer	</option>
+        <option value="Front-End">Front-End Developer</option>
+      </select>
     </div>
+    <div class="form-group">
+      <label for="resume">Upload Resume</label><br>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+  </div>
+      <div class="form-group">
+        <label for="message">Message</label><br>
+        <textarea class="message" name="message" rows="5" required></textarea>
+      </div>
+     <div class="form-group">
+    <input type="submit" value="Submit Application">
+     </div>
+    </form>
+
   </div>
     <div class="footer">
       <ul class="footer-links">
-        <li>Courses</li>
-        <li>Youtube</li>
-        <li>Programs</li>
+        <li class="links">Courses</li>
+        <li class="links">Youtube</li>
+        <li class="links">Programs</li>
       </ul>
-      <span>© 2024 My First Web</span>
+      <span class="copyright">© 2024 My First Web</span>
     </div>
 
   </body>
